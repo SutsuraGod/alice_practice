@@ -52,7 +52,7 @@ def handle_dialog(req, res):
         return
 
     res["response"]["text"] = \
-        f"Все говорят '{req["request"]["original_utterance"]}', а ты купи слона!"
+        f"Все говорят '{req['request']['original_utterance']}', а ты купи слона!"
     res["response"]["buttons"] = get_suggests(user_id)
 
 
